@@ -12,7 +12,7 @@ function fetchTemperature() {
     const latitude = -27.4705;
     const longitude = 153.026;
 
-    const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}¤t_weather=true`;
+    const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m`;
 
     fetch(apiUrl)
         .then((response) => {
@@ -22,7 +22,8 @@ function fetchTemperature() {
             return response.json(); // Convert the response to JSON - an object
         })
         .then((data) => {
-            const temperature = data.current_weather.temperature;
+            console.log(data);
+            const temperature = data.current.temperature_2m;
             temperatureValue.textContent = temperature; // Update UI
         })
         .catch((error) => {

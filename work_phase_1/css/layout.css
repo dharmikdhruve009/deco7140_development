@@ -6,6 +6,6 @@
     /* 80% of the viewport width */
     margin: 0 auto;
     /* Centers the container horizontally */
-    background-color: lightgreen;
-    /* Light green for contrast */
+    background-color: rgb(252, 252, 252);
+    
 }

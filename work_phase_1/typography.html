@@ -3,8 +3,86 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Style - Guide Colour Scheme</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/component.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
+        <title>Style Guide - Typography</title>
+        <style>
+            .card {
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                padding: 1.5rem;
+                width: 90%;
+                max-width: 350px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        </style>
     </head>
     <body>
+        <header></header>
+        <div class="container">
+            <h1>Style Guide</h1>
+            <section>
+                <h1>Typography</h1>
+                <div class="card-container">
+                    <div class="simple-card">
+                        <h1>H1 Heading Example</h1>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 4rem (64px)</p>
+                        <p>Color: var(--color-primary)</p>
+                    </div>
+                    <div class="simple-card">
+                        <h2>H2 Heading Example</h2>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 3rem (48px)</p>
+                    </div>
+                    <div class="simple-card">
+                        <h3>H3 Heading Example</h3>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 1.5rem (24px)</p>
+                    </div>
+                    <div class="simple-card">
+                        <h4>H4 Heading Example</h4>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 1rem (16px)</p>
+                        <p>Font Weight: bold</p>
+                    </div>
+                    <div class="simple-card">
+                        <h5>H5 Heading Example</h5>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 0.75rem (12px)</p>
+                        <p>Font Weight: bold</p>
+                    </div>
+                    <div class="simple-card">
+                        <p>Paragraph example</p>
+                        <p>Font Family: Urbanist, sans-serif</p>
+                        <p>Font Size: 1rem (16px)</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1>Line Spacing</h1>
+                <div class="card-container">
+                    <div class="simple-card">
+                        <p>Line height across the site has been set to 1.5. This is to support accessibility.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Links</h2>
+                <a class="button button-primary" href="../index.html">Work Phase 1</a>
+                <a class="button button-secondary" href="components.html">Components</a>
+            </section>
+            <section class="card">
+                <h2>Typography Preview</h2>
+                <p>This card demonstrates typography styles with a clean, centered layout.</p>
+            </section>
+        </div>
+        <script src="js/typography.js"></script>
     </body>
 </html>

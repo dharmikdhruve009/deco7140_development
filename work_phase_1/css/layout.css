@@ -9,3 +9,11 @@
     background-color: rgb(252, 252, 252);
     
 }
+
+@media (min-width: 768px) {
+    .container {
+        width: 60vw;
+        /* 60% of the viewport width */
+    }
+    
+}

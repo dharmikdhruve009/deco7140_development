@@ -25,8 +25,6 @@ let message = "Page has fully loaded!";
  * EVENT LISTENERS
  * The code that runs when a user interacts with the page
  **/
-
-/* When the page fully loads */
 window.addEventListener("load", () => {
     logMessage(PAGE_NAME, message);
 });

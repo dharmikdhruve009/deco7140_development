@@ -1,0 +1,66 @@
+/* Import Google Font Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;    /* Dark Blue */
+    --secondary-color: #3498db;  /* Bright Blue */
+    --accent-color: #e74c3c;     /* Red */
+    --text-color: #333;          /* Dark Grey */
+    --background-color: #f5f5f5;  /* Light Grey */
+}
+
+/* Apply default font and background styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+/* Headings & Paragraph Reset */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1;
+}
+
+/* List Reset */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Typography (Using Golden Ratio) */
+h1 {
+    font-size: 4.2rem; /* 2.6 x 1.618 rounded */
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.6rem; /* 1.6 x 1.618 rounded */
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.6rem; /* Base value as per style guide */
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem; /* Default text size */
+}
+
+/* Reapply a consistent line-height for text elements */
+h1, h2, h3, h4, h5, p {
+    line-height: 1.5;
+}

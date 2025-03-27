@@ -1,0 +1,34 @@
+/* Layout */
+.container {
+    height: 100vh;            /* Full viewport height */
+    width: 80vw;              /* 80% of the viewport width */
+    margin: 0 auto;           /* Centers the container horizontally */
+    background-color: var(--background-color, rgb(252, 252, 252));
+    /* Fallback to rgb(252, 252, 252) if the variable is not defined */
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 60vw;          /* 60% of the viewport width on devices 768px and up */
+    }
+}
+
+/* 3 columns on larger screens */
+@media (min-width: 768px) {
+    .flip-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Flip Animation (Desktop Hover) */
+@media (hover: hover) {
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+/* Mobile-Friendly Flip (Focus & Tap) */
+.flip-card:focus .flip-card-inner,
+.flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+}

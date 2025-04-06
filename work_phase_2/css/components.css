@@ -207,6 +207,11 @@
     /* Add any other specific styles for your value box here */
 }
 
+.value-box:hover{
+    transform:scale(1.05); /* Scale up the box on hover */
+    border-color: var(--accent-color); /* Change border color on hover */
+}
+
 
 
 /* components.css */
@@ -264,3 +269,67 @@
     font-style: italic;
     background-color: color-mix(in srgb, var(--secondary-color) 10%, transparent); /* color variable transparency */
 }
+
+/* INTERACTIVE HIGHLIGHTING */
+/* Base Highlight Style */
+.interactive-highlight-stories {
+    position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
+    background-color: rgba(
+        255,
+        215,
+        0,
+        0.3
+    ); /* Light yellow highlight with 30% transparency */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    padding: 2px 5px; /* Adds small space inside the highlight for better readability */
+    border-radius: 5px; /* Rounds the corners slightly for a softer look */
+    transition: background 0.3s ease; /* Smooth transition effect when background changes */
+}
+
+/* Tooltip Styling for Highlighted Text */
+.interactive-highlight-stories::after {
+    content: attr(data-userstory); /* See the explanation */
+    position: absolute; /* Positions the tooltip relative to the highlighted text */
+    top: -5px; /* Moves the tooltip slightly above the highlighted text */
+    right: -15px; /* Moves the tooltip slightly to the right of the highlighted text */
+    background: var(--secondary-color);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 300px; /* Sets a fixed width for the tooltip */
+    height: 100px; /* Sets a fixed height, making the tooltip a perfect circle */
+    padding: 0 10px; /* Adds padding inside the tooltip for better text spacing */
+    display: flex; /* Uses Flexbox to center the text inside the circle */
+    align-items: center; /* Vertically centers the text inside the tooltip */
+    justify-content: center; /* Horizontally centers the text inside the tooltip */
+    border-radius: 5 px; /* Creates rounded corners */
+    opacity: 0; /* Initially hides the tooltip */
+    transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
+}
+
+/* Show Number on Hover (Desktop) */
+@media (hover: hover) {
+    .interactive-highlight-stories:hover::after {
+        opacity: 1;
+    }
+}
+
+/* Show Number on Tap (Mobile) */
+.interactive-highlight-stories:focus::after,
+.interactive-highlight-stories:active::after {
+    opacity: 1;
+}
+
+.user-story-box {
+    border: 2px solid #3498db; /* Bright Blue ; / Adjust thickness and color as needed */
+    padding: 10px; /* Add padding inside the border if desired */
+    margin-bottom: 20px; /* Space between boxes */
+    /* Add any other specific styles for your value box here */
+}
+
+.user-story-box:hover{
+    transform:scale(1.05); /* Scale up the box on hover */
+    border-color: var(--accent-color); /* Change border color on hover */
+}
+
+

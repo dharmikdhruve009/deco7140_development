@@ -206,3 +206,61 @@
     margin-bottom: 20px; /* Space between boxes */
     /* Add any other specific styles for your value box here */
 }
+
+
+
+/* components.css */
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Use a primary color from your theme */
+    margin-bottom: 0.5rem;
+}
+
+.initial-prompt {
+    font-style: italic;
+    color: var(--text-light); /* Use a lighter text color */
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-weight: semi-bold;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.interview {
+    margin-bottom: 2rem; /* Add margin at the bottom to separate interviews */
+    padding: 1.5rem;
+    border: 1px solid var(--border-color); /* Add a subtle border */
+    border-radius: 0.5rem;
+    background-color: var(
+        --background-secondary
+    ); /* Use a slightly different background */
+}
+
+/* Ensure helper classes are still available (they should be in base.css or layout.css) */
+/* Example if not already defined: */
+/*
+.m-b-4 {
+    margin-bottom: 1.5rem;
+}
+
+.p-x-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+*/
+/* using an emoji for a bullet point (marker) */
+.interview ul li::marker {
+    content: "🥕";
+    font-size: 1.5em;
+    display: inline-block;
+}
+/* using a colour variable but changing the opacity/transparency */
+.response {
+    border-left: 2px solid var(--secondary-color);
+    font-style: italic;
+    background-color: color-mix(in srgb, var(--secondary-color) 10%, transparent); /* color variable transparency */
+}

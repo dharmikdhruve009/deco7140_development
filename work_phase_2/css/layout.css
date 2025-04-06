@@ -1,15 +1,15 @@
 /* Layout */
 .container {
-    height: 100vh;            /* Full viewport height */
-    width: 80vw;              /* 80% of the viewport width */
-    margin: 0 auto;           /* Centers the container horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 80vw; /* 80% of the viewport width */
+    margin: 0 auto; /* Centers the container horizontally */
     background-color: var(--background-color, rgb(252, 252, 252));
     /* Fallback to rgb(252, 252, 252) if the variable is not defined */
 }
 
 @media (min-width: 768px) {
     .container {
-        width: 60vw;          /* 60% of the viewport width on devices 768px and up */
+        width: 60vw; /* 60% of the viewport width on devices 768px and up */
     }
 }
 
@@ -31,4 +31,86 @@
 .flip-card:focus .flip-card-inner,
 .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
+}
+
+:root {
+    --space-0: 0;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2rem;
+    --space-6: 3rem;
+}
+
+/* Margin Utilities */
+.m-0 {
+    margin: var(--space-0);
+}
+.m-1 {
+    margin: var(--space-1);
+}
+.m-2 {
+    margin: var(--space-2);
+}
+.m-3 {
+    margin: var(--space-3);
+}
+.m-4 {
+    margin: var(--space-4);
+}
+.m-5 {
+    margin: var(--space-5);
+}
+.m-6 {
+    margin: var(--space-6);
+}
+
+.m-t-1 {
+    margin-top: var(--space-1);
+}
+.m-b-1 {
+    margin-bottom: var(--space-1);
+}
+.m-s-1 {
+    margin-left: var(--space-1);
+} /* start = left (LTR) */
+.m-e-1 {
+    margin-right: var(--space-1);
+} /* end = right (LTR) */
+.m-x-1 {
+    margin-left: var(--space-1);
+    margin-right: var(--space-1);
+}
+.m-y-1 {
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+}
+
+/* Repeat for 0 through 6 (or however far your scale goes) */
+
+.p-0 {
+    padding: var(--space-0);
+}
+.p-1 {
+    padding: var(--space-1);
+}
+/* ... */
+.p-y-3 {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+}
+/* etc. */
+
+.m-s-1 {
+    margin-inline-start: var(--space-1);
+}
+.m-e-1 {
+    margin-inline-end: var(--space-1);
+}
+.p-s-1 {
+    padding-inline-start: var(--space-1);
+}
+.p-e-1 {
+    padding-inline-end: var(--space-1);
 }

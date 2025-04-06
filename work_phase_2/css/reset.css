@@ -1,74 +1,62 @@
-/* Global Styles */
-* {
+/* CSS Reset */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Typography Resets */
+html,
 body {
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+    line-height: 1;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
     margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font-weight: normal;
 }
 
-/* List Styles */
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Table Styles */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* Animation Resets */
-/* Note: Animations are typically reset or restarted using JavaScript.
-       There's no direct way to reset animations purely with CSS.
-       However, you can remove animation properties to prevent them from running initially.
-*/
-/* Example: Removing animation properties */
-* {
-    animation: none !important;
-    transition: none !important;
-}
-
-/* Additional Resets */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+ul,
+ol {
+    list-style: none;
 }
 
-input, textarea {
-    padding: 0;
-    border: none;
-    outline: none;
+/* :root {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
 }
 
-/* Other Resets */
-button {
-    padding: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-/* For accessibility, ensure focus is visible */
-*:focus {
-    outline: auto 2px -webkit-focus-ring-color;
-}
+* {
+    animation: none !important;
+    transition: none !important;
+} */

@@ -24,21 +24,6 @@ body {
     line-height: 1.5;
 }
 
-/* Headings & Paragraph Reset */
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font-weight: normal;
-    line-height: 1;
-}
-
-/* List Reset */
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 /* Typography (Using Golden Ratio) */
 h1 {
@@ -54,13 +39,10 @@ h2 {
 h3 {
     font-size: 1.6rem; /* Base value as per style guide */
     font-weight: 700;
+    color: var(--secondary-color);
 }
 
 p {
     font-size: 1rem; /* Default text size */
 }
 
-/* Reapply a consistent line-height for text elements */
-h1, h2, h3, h4, h5, p {
-    line-height: 1.5;
-}

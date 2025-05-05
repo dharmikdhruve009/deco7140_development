@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+/* css/base.css */
+
+:root {
+    --primary-color: #4b145b;     /* Deep Purple */
+    --secondary-color: #00bfae;   /* Vibrant Teal */
+    --accent-color: #ffb400;      /* Warm Gold */
+    --text-color: #22223b;        /* Charcoal Blue */
+    --background-color: rgb(250, 249, 249);  /* Pure White */
+}
+
+
+body {
+    font-family: "Fira Mono", monospace;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+}
+
+/* Typography (Using Golden Ratio) */
+h1 {
+    font-family: "Fira Mono", monospace; /* Apply Fira Mono to headings as well */
+    font-size: 4.2rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: "Fira Mono", monospace; /* Apply Fira Mono to headings as well */
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Fira Mono", monospace; /* Apply Fira Mono to headings as well */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: 1rem;
+}

@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Guide</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-</body>
+        <script type="module" src="js/index.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="css/page_css/style_guide.css" />
+        <link rel="stylesheet" href="css/component_skeletons/accordion.css" />
+        <title>Style Guide</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="nav-mobile" aria-label="Main Navigation">
+                <ul>
+                    <li>
+                        <a href="index.html"><span class="icon">🏠</span></a>
+                    </li>
+                    <li>
+                        <a href="site_map.html"><span class="icon">🧭</span></a>
+                    </li>
+                    <li>
+                        <a href="style_guide.html"
+                            ><span class="icon">🎨</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="ethical_response.html"
+                            ><span class="icon">⚖️</span></a
+                        >
+                    </li>
+                    <li>
+                        <a href="genai_mt_acknowledgement.html"
+                            ><span class="icon">🤖</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="nav-desktop" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">WP3 Home</a></li>
+                    <li><a href="site_map.html">Site Map</a></li>
+                    <li><a href="style_guide.html">Style Guide</a></li>
+                    <li><a href="ethical_response.html">Ethics Response</a></li>
+                    <li><a href="genai_mt_acknowledgement.html">Gen AI</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="container">
+                    <h1>Style Guide</h1>
+                    <section class="card-container">
+                        <a
+                            href="visceral_design.html"
+                            class="card card--feature"
+                        >
+                            <img
+                                src="assets/viscerial.jpg"
+                                alt="Example of Visceral Design"
+                                class="style-guide-image"
+                            />
+                            <p>
+                                Immediate, instinctive reactions to a website’s
+                                look and feel-colors, shapes, and visuals that
+                                create strong first impressions and emotional
+                                responses.
+                            </p>
+                        </a>
+                        <a
+                            href="behavioural_design.html"
+                            class="card card--feature"
+                        >
+                            <img
+                                src="assets/behavioural.png"
+                                alt="Example of Behavioural Design"
+                                class="style-guide-image"
+                            />
+                            <p>
+                                Focuses on usability, function, and feedback-how
+                                easily users can navigate, interact, and
+                                accomplish tasks, shaping satisfaction through
+                                smooth, intuitive experiences.
+                            </p>
+                        </a>
+                        <a
+                            href="reflective_design.html"
+                            class="card card--feature"
+                        >
+                            <img
+                                src="assets/reflective.png"
+                                alt="Example of Reflective Design"
+                                class="style-guide-image"
+                            />
+                            <p>
+                                Involves users’ thoughts and memories after
+                                interaction-how meaningful, valuable, or
+                                memorable the website experience feels upon
+                                reflection.
+                            </p>
+                        </a>
+                    </section>
+                </div>
+            </main>
+
+            <section class="accordion m-y-3">
+                <div class="accordion-item">
+                    <button class="accordion-header">▷ Inspiration</button>
+                    <div class="accordion-content">
+                        <p class="m-y-3">
+                            Central hub for users to see and share inspiring
+                            content. Supports the client's goal of empowering
+                            users with knowledge and User story 'As a ...'.
+                            <span style="color: var(--accent2-color)">
+                                Note: this should be your content! These are
+                                your annotations (see L08 for details).
+                            </span>
+                        </p>
+
+                        <!-- Nested Accordion for Sub-pages -->
+                        <div class="accordion nested">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    ▹▷ Garden Showcase
+                                </button>
+                                <div class="accordion-content">
+                                    <p class="m-y-3">
+                                        THIS SHOULD BE YOUR ANNOTATION FOR YOUR
+                                        WEBSITE A showcase of inspiring food
+                                        gardens. Supports ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a href="../index.html">Home</a>
+        </div>
+    </body>
 </html>

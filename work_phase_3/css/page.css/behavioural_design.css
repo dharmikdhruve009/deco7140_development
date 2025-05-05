@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #4b145b;     /* Deep Purple */
+    --secondary-color: #00bfae;   /* Vibrant Teal */
+    --accent-color: #ffb400;      /* Warm Gold */
+    --text-color: #22223b;        /* Charcoal Blue */
+    --background-color: rgb(250, 249, 249);  /* Light background */
+}
+
+/* Generic Button Styles */
+.btn {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75em 2em;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 
+        background-color 0.2s,
+        color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    outline: none;
+    margin: 0.5em 0.5em 0.5em 0;
+    display: inline-block;
+}
+
+/* Primary Button */
+.btn--primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+.btn--primary:hover,
+.btn--primary:focus-visible {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 16px rgba(0,191,174,0.18);
+}
+.btn--primary:active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+}
+
+/* Secondary Button */
+.btn--secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 16px rgba(75,20,91,0.18);
+}
+.btn--secondary:active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+}
+
+/* Disabled State */
+.btn:disabled,
+.btn[disabled] {
+    background-color: #eee;
+    color: #aaa;
+    border-color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
+}

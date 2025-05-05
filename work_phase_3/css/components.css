@@ -1,0 +1,83 @@
+/* MENUS */
+/* Base styles */
+@import './component_skeletons/accordion.css';
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#nav-mobile ul li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+#nav-mobile ul li a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#nav-desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Correct shadow direction */
+    display: none;
+    z-index: 1000;
+}
+
+#nav-desktop ul li a {
+    display: block;
+    padding: 1rem 2rem; /* More horizontal padding for better area */
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff; /* White text for contrast */
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+}
+
+#nav-desktop ul li a:hover {
+    background: #8b0000;         /* Hover state: dark red background */
+    color: #fff;                 /* Hover state: white text */
+}
+
+/* Responsive control */
+@media screen and (min-width: 768px) {
+    #nav-desktop {
+        display: block;
+    }
+    #nav-mobile {
+        display: none;
+    }
+    main {
+        padding-top: 64px; /* Adjust this value to match your nav height */
+    }
+}
+
+/* Responsive image utility */
+.responsive-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

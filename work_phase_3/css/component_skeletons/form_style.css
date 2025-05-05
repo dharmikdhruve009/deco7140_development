@@ -1,0 +1,92 @@
+/* Form Container */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #22223b; /* Charcoal Blue from :root */
+}
+
+/* Form Labels */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Required field asterisk */
+label span[aria-hidden="true"] {
+    color: var(--accent-color, #ffb400); /* Warm Gold */
+    margin-left: 0.25rem;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus state for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    border-color: var(--primary-color, #4b145b); /* Deep Purple */
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color, #4b145b);
+}
+
+/* Help text below inputs */
+.form-text {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: var(--secondary-color, #00bfae); /* Vibrant Teal */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--primary-color, #4b145b); /* Deep Purple */
+    outline: none;
+}
+
+/* Feedback message */
+#formFeedback {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--accent-color, #ffb400); /* Warm Gold for feedback */
+    min-height: 1.5em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

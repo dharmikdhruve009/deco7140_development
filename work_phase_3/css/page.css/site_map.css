@@ -1,0 +1,16 @@
+/* site_map.css */
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 14px); /* Approximately 3 cards per row with gap considered */
+        margin-bottom: 20px; /* Add bottom margin for wrapped rows */
+    }
+}
+
+/* Mobile: cards are full width by default from skeleton */
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 14px); /* 3 per row, accounting for gap */
+        margin-bottom: 20px; /* Space below for wrapped rows */
+    }
+}
+                                                 

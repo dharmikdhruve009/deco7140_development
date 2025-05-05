@@ -9,14 +9,352 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/page.css/behavioural_design.css" />
+        <link rel="stylesheet" href="css/component_skeletons/form_style.css" />
+        <script type="module" src="js/modules/behavioural_design.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <title>Beahvioural Design</title>
+        <title>Behavioural Design</title>
     </head>
     <body>
-        <nav id="nav-mobile" aria-label="Main Navigation"></nav>
-        <nav id="nav-desktop" aria-label="Main Navigation"></nav>
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="icon">🏠</span></a>
+                </li>
+                <li>
+                    <a href="site_map.html"><span class="icon">🧭</span></a>
+                </li>
+                <li>
+                    <a href="style_guide.html"><span class="icon">🎨</span></a>
+                </li>
+                <li>
+                    <a href="ethical_response.html"
+                        ><span class="icon">⚖️</span></a
+                    >
+                </li>
+                <li>
+                    <a href="genai_mt_acknowledgement.html"
+                        ><span class="icon">🤖</span></a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">WP3 Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethics Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">Gen AI</a></li>
+            </ul>
+        </nav>
+
         <main>
-            <h1>Behavioural Design</h1>
+            <div class="container">
+                <h1>Behavioural Design</h1>
+                <section>
+                    <h3>What is Behavioural Design?</h3>
+                    <p>
+                        Behavioural design focuses on usability and function-how
+                        pleasurable and effective a website is to use, whether
+                        it fulfils its purpose, and whether users feel competent
+                        and in control.<br />
+                        <strong>Key principles:</strong> Discoverability,
+                        Feedback, Conceptual Models, Signifiers, Mapping,
+                        Constraints (Norman’s principles).
+                    </p>
+                </section>
+
+                <section>
+                    <h2><br />Links</h2>
+                    <p>
+                        <img
+                            src="assets/links.png"
+                            alt="Example of a link"
+                            class="link-example"
+                        />
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Discoverability:</strong> Underlined, plain
+                            and shadowed such that it clearly looks like a link
+                            when its normal, hovered and focused
+                        </li>
+                        <li>
+                            <strong>Feedback:</strong> Hover/focus state changes
+                            with changes from underline to shadows to darker
+                            shade for clear response.
+                        </li>
+                        <li>
+                            <strong>WCAG 2.4.4:</strong> Clear link text helps
+                            everyone understand where a link goes, especially
+                            those using assistive technology. Make link text
+                            descriptive on its own when you can. Context in the
+                            same sentence or nearby can also explain a link.
+                            Keep link text consistent for the same destination
+                            and different for different destinations. If linking
+                            to an accessible version, say so in the link. Only
+                            if the link's purpose is truly unclear on the page
+                            is a less descriptive link acceptable. Intentional
+                            obscurity (like in games) is also an exception.<br />
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2><br />Navigation Bar </h2>
+                    <p>
+                        <img
+                            src="assets/desktop_menu.png"
+                            alt="Example of a navigation menu in desktop"
+                            class="nav-example"
+                        />
+                        <figcaption>
+                            Example of a navigation menu in desktop
+                        </figcaption>
+                        <br />
+                    </p>
+                    <p>
+                        <img
+                            src="assets/mobile_menu.png"
+                            alt="Example of a navigation menu in mobile"
+                            class="nav-example"
+                        />
+                        <figcaption>
+                            Example of a navigation menu with dedictaed icons in
+                            a mobile view
+                        </figcaption>
+                        <br />
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Discoverability:</strong> Logical grouping,
+                            clear labels with dedciated icons for each
+                            navigation bar component aids in making it evident
+                            what the component means and one click upon it to
+                            explore more or opens a new page related to the
+                            same.
+                        </li>
+                        <li>
+                            <strong>Active State:</strong> Current page is
+                            highlighted (aria-current="page").
+                        </li>
+                        <li>
+                            <strong>WCAG 3.2.3 and WCAG 1.1.1:</strong>
+                            Navigation is important because it ensures users can
+                            easily find their way around a website. Consistent
+                            navigation (like menus, links, and search) in the
+                            same place and with the same labels on every page
+                            makes the site predictable and less confusing. This
+                            is especially helpful for people with cognitive
+                            disabilities, those using screen readers, and anyone
+                            who relies on consistent structure to navigate
+                            effectively. Predictable navigation reduces
+                            cognitive load and improves overall usability.<br />
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                </section>
+                    <h2>Icons</h2>
+                    <p>
+                        <img
+                            src="assets/icons.png"
+                            figcaption="Example of icons"
+                            alt="Example of a link"
+                            class="link-example"
+                        />
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Icons playing an important role in wesbite development, they ease in communication and aid in better understanding the general mass.  </p>
+                        </li>
+                        <li>
+                            <strong>Feedback:</strong> Hover/focus state changes
+                            with changes from underline to shadows to darker
+                            shade for clear response.
+                        </li>
+                        <li>
+                            >
+                        </li>
+                    </ul>
+                        <p>Icons
+                        on the other hand aid in better visulization, ease
+                        in navigation and better visualization.<br />
+                        The goal of this Success Criterion is to make
+                        information in non-text content (like images and
+                        videos) accessible by providing text alternatives.
+                        These text descriptions can be converted into
+                        various formats (like speech, braille, or simpler
+                        language) to meet different user needs. This ensures
+                        that people who can't see or hear the content can
+                        still understand it. Text alternatives also open
+                        possibilities for future translations, such as into
+                        sign language.<br />
+                    </p>
+                </section>
+
+                <section>
+                    <h2><br />Cards</h2>
+                    <article class="card">
+                        <img
+                            src="assets/text1.png"
+                            alt="Example of a card in normal state"
+                            class="card-example"
+                        />
+                        <figcaption>
+                            Example of a card in normal state
+                        </figcaption>
+                        <img
+                            src="assets/text2.png"
+                            alt="Example of a card after hovering"
+                            class="card-example"
+                        />
+                        <figcaption>
+                            Example of a card after hovering
+                        </figcaption>
+                        <br />
+
+                        <p>
+                            This card groups related information for easy
+                            scanning. Action areas are clearly indicated.
+                        </p>
+                    </article>
+                    <ul>
+                        <li>
+                            <strong>Conceptual Model:</strong> Familiar layout
+                            supports quick recognition.
+                        </li>
+                        <li>
+                            <strong>Constraints:</strong> One purpose per card
+                            prevents overload.
+                        </li>
+                        <li>
+                            <strong>WCAG 1.3.2:</strong> Meaningful sequence- If
+                            the order of content on a webpage matters for
+                            understanding, that order must be kept for
+                            everyone-including people using screen readers or
+                            other assistive technology. Some users read web
+                            pages with tools that don’t show the visual layout
+                            (like screen readers). If content is out of order in
+                            the code, it can be confusing or misleading. Always
+                            keep important content in the right order in your
+                            HTML, so everyone gets the information in the way it
+                            makes sense. This ensures your website is accessible
+                            and understandable for all users, no matter how they
+                            access it.<br />
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2><br />Buttons</h2>
+                    <button class="btn btn--primary">Primary Action</button>
+                    <button class="btn btn--secondary">Secondary Action</button>
+                    <button class="btn btn--primary" disabled>Disabled</button>
+
+                    <ul>
+                        <li>
+                            <strong>Affordance:</strong> Looks clickable,
+                            labeled with action.
+                        </li>
+                        <li>
+                            <strong>Feedback:</strong> Visual state and colour
+                            of the buttons change on hover, click and also
+                            release.
+                        </li>
+                        <li>
+                            <strong>Constraints:</strong> Disabled state when
+                            not usable.
+                        </li>
+                        <li>
+                            <strong>WCAG 1.4.1:</strong> Don’t use color as the
+                            only way to show information, actions, or status on
+                            your website. Not everyone sees color the same way.
+                            Some people are colorblind, have low vision, or use
+                            screens that don’t show color well. If you use only
+                            color to show meaning, these users might miss
+                            important information. You can use color to help
+                            users-but never rely on color alone to communicate
+                            something important.In short: Color should never be
+                            the only way you show information or prompt action.
+                            Always add another visual clue.<br />
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2><br />Sample Form</h2>
+                    <form id="sampleForm" novalidate>
+                        <div>
+                            <label for="name"
+                                >Full Name
+                                <span aria-hidden="true">*</span></label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                aria-describedby="nameHelp"
+                            />
+                        </div>
+                        <div>
+                            <label for="email"
+                                >Email Address
+                                <span aria-hidden="true">*</span></label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                aria-describedby="emailHelp"
+                            />
+                        </div>
+                        <div>
+                            <label for="photo">Upload Photo</label>
+                            <input
+                                type="file"
+                                id="photo"
+                                name="photo"
+                                aria-describedby="photo-help"
+                            />
+                            <br />
+                            <div id="photo-help" class="form-text">
+                                Upload a clear photo of yourself in JPG or PNG
+                                within 5Mb.
+                            </div>
+                        </div>
+                        <br />
+                        <button type="submit" class="submit-btn">
+                            Join Now
+                        </button>
+                        <p id="formFeedback" aria-live="polite"></p>
+                    </form>
+                    <ul>
+                        <li>
+                            <strong>Feedback:</strong> Validation messages and
+                            confirmation.
+                        </li>
+                        <li>
+                            <strong>Constraints:</strong> Field types and limits
+                            prevent errors.
+                        </li>
+                        <li>
+                            <strong>WCAG 3.3.2:</strong> Whenever a form asks
+                            users to enter information-like their name, email,
+                            or password-each field must have a clear label or
+                            instructions so users know exactly what to enter.
+                            Always provide clear, visible labels and any needed
+                            instructions for every form field, so everyone knows
+                            what to enter and how.
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
         <a href="../index.html">Home</a>
     </body>

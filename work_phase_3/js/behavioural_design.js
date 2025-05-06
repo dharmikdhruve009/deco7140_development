@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('community-form');
     const feedback = document.getElementById('form-feedback');
 
-    
+    if (!form || !feedback) return;
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -54,5 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// when the page fully loads/*
 
-// when the page fully loads

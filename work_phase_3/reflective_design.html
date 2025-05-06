@@ -4,15 +4,21 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- JS and CSS Imports -->
         <script type="module" src="js/index.js"></script>
+        <script type="module" src="js/reflective_design.js"></script>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/page_css/reflective_design.css" />
+        <link rel="stylesheet" href="css/component_skeletons/accordion.css" />
+        <script type="module" src="js/reflective_design.js"></script>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <title>Reflective Design</title>
     </head>
     <body>
+        <!-- Mobile Navigation -->
         <nav id="nav-mobile" aria-label="Main Navigation">
             <ul>
                 <li>
@@ -34,30 +40,275 @@
                         ><span class="icon">🤖</span></a
                     >
                 </li>
+                <li>
+                    <a href="reflective_design.html" aria-current="page"
+                        ><span class="icon">💡</span></a
+                    >
+                </li>
             </ul>
         </nav>
 
+        <!-- Desktop Navigation -->
         <nav id="nav-desktop" aria-label="Main Navigation">
             <ul>
+                <li><a href="index.html">WP3 Home</a></li>
+                <li><a href="site_map.html">Site Map</a></li>
+                <li><a href="style_guide.html">Style Guide</a></li>
+                <li><a href="ethical_response.html">Ethics Response</a></li>
+                <li><a href="genai_mt_acknowledgement.html">Gen AI</a></li>
                 <li>
-                    <a href="index.html">WP3 Home</a></li>
+                    <a href="reflective_design.html" aria-current="page"
+                        >Reflective Design</a
+                    >
                 </li>
-                <li>
-                    <a href="site_map.html">Site Map</a></li>
-                </li>
-                <li>
-                    <a href="style_guide.html">Style Guide</a>
-                </li>
-                <li>
-                    <a href="ethical_response.html">Ethics Response</a></li>
-                </li>
-                <li>
-                    <a href="genai_mt_acknowledgement.html">Gen AI</a></li>                               
             </ul>
         </nav>
+
         <main>
             <div class="container">
                 <h1>Reflective Design</h1>
+
+                <!-- Accordion for organizing sections -->
+                <section class="accordion m-y-4">
+                    <!-- Values Mapping -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            ▹ Values Mapping Table
+                        </button>
+                        <div class="accordion-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Value</th>
+                                        <th>Design Implications &amp; Specific Elements</th>
+                                        <th>Annotation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Inclusivity</td>
+                                        <td>
+                                            - Use semantic HTML and ARIA roles<br>
+                                            - High color contrast, readable fonts<br>
+                                            - Alt text for images<br>
+                                            - Keyboard navigation<br>
+                                            - Multilingual support<br>
+                                            - Diverse imagery and icons<br>
+                                            - Adjustable font sizes<br>
+                                            - Clear, jargon-free language
+                                        </td>
+                                        <td>
+                                            Ensures everyone, including users with disabilities, non-native speakers, and diverse backgrounds, can access and engage with the site.
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Fostering Societal Ties</td>
+                                        <td>
+                                            - Community forums and discussion boards<br>
+                                            - Event calendars<br>
+                                            - Photo galleries of community events<br>
+                                            - Member stories/testimonials<br>
+                                            - Social sharing buttons<br>
+                                            - Contact info for local groups
+                                        </td>
+                                        <td>
+                                            Builds a sense of belonging and encourages interaction by providing spaces and features for users to connect, share, and participate in community life.
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Community Support</td>
+                                        <td>
+                                            - Resource directories (support services, helplines)<br>
+                                            - FAQ and help sections<br>
+                                            - Volunteer sign-up forms<br>
+                                            - Feedback forms<br>
+                                            - Live chat/support<br>
+                                            - Highlighted “Get Help” buttons
+                                        </td>
+                                        <td>
+                                            Makes it easy for users to find help, support each other, and get involved. Clear pathways to support empower users and foster a caring, responsive community environment.
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Imagery and Tone -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            ▹ Meaning through Imagery and Tone
+                        </button>
+                        <div class="accordion-content">
+                            <h2>Meaning through Imagery and Tone</h2>
+                            <p>
+                                Our website uses welcoming, diverse imagery and a warm, inclusive tone to reflect the community’s values. 
+                                Photos of real events, group activities, and friendly faces help users see themselves as part of the site. Clear and positive messaging make everyone feel invited and supported. 
+                                Together, our imagery and words build a sense of belonging, encourage connection, and empower users to participate and seek support in a vibrant community.
+                            </p>
+                            <div class="image-gallery">
+                                <img
+                                    src="assets/welcome_community.jpg"
+                                    alt="Welcoming community event"
+                                    class="responsive-img"
+                                /> <br/>
+                                <img
+                                    src="assets/community_engagment.jpg"
+                                    alt="Diverse group engaging"
+                                    class="responsive-img"
+                                /> <br/>
+                                <img
+                                    src="assets/supportive_env.png"
+                                    alt="Supportive environment"
+                                    class="responsive-img"
+                                />
+                            </div> 
+                            
+                            <p class="annotation">
+                                <strong>Annotation:</strong> Imagery and
+                                language are chosen to reflect our mission of
+                                inclusivity and support, reinforcing the site's
+                                positive, community-focused tone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Reflective Language and Expression -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            ▹ Reflective Language and Expression
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>
+                                    <strong>To ensure everyone feels welcome and understood. Our content is written in plain English, supports multiple languages, and avoids complex terms, making information accessible to all users-including those with diverse backgrounds or abilities. 
+                                    By focusing on inclusivity and support in our words, we help users feel confident, engaged, and empowered to participate in the community.</strong> Inclusive
+                                    language, plain English, positive tone, avoids jargon. As you arrive to Australia a welcome is must, and if it happens in ones own language one gets to feel friendly and included. So, users must regsiter to access resources and also sign up to join our community and access helpful resources.
+                                </li>
+                            </ul>
+                            <p class="annotation">
+                                <strong>Annotation:</strong> The revised text is
+                                friendlier and more inviting, supporting
+                                engagement and reflecting our values.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            ▹ Seeing Ourselves
+                        </button>
+                        <div class="accordion-content">
+                                <section>
+                                    <h2><br />Want to join us, mate ?</h2>
+                                    <p>Users can get a part to be included and welcomed right away upon signing up with us.<br/>
+                                        With all the features and functions of the form, users can easily fill in their details and upload a photo.<br/>
+                                        All the needs a user has are taken care of and this feature is a stepping stone to the CCI success.<br/>
+                                        Thus, the form is designed to be user-friendly and accessible, ensuring that all users can easily navigate and complete it.
+                                    </p>
+                                    <form id="sampleForm" novalidate>
+                                        <div>
+                                            <label for="name"
+                                                >Full Name
+                                                <span aria-hidden="true">*</span></label
+                                            >
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                required
+                                                minlength="2"
+                                                maxlength="50"
+                                                aria-describedby="nameHelp"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label for="email"
+                                                >Email Address
+                                                <span aria-hidden="true">*</span></label
+                                            >
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                required
+                                                aria-describedby="emailHelp"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label for="photo">Upload Photo</label>
+                                            <input
+                                                type="file"
+                                                id="photo"
+                                                name="photo"
+                                                aria-describedby="photo-help"
+                                            />
+                                            <br />
+                                            <div id="photo-help" class="form-text">
+                                                Upload a clear photo of yourself in JPG or PNG
+                                                within 5Mb.
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <button type="submit" class="submit-btn">
+                                            Join Now
+                                        </button>
+                                        <p id="formFeedback" aria-live="polite"></p>
+                                    </form>
+                                    <ul>
+                                        <li>
+                                            <strong>Feedback:</strong> Validation messages and
+                                            confirmation.
+                                        </li>
+                                        <li>
+                                            <strong>Constraints:</strong> Field types and limits
+                                            prevent errors.
+                                        </li>
+                                    </section>
+                                
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <section class="accessibility-report">
+                        <h2>Accessibility Audit Report</h2>
+                        <p>This report identifies key accessibility issues found during testing and outlines our plan to address them.</p>
+                        
+                        <div class="issue-card">
+                            <h3>Issue:"nameHelp" specified for the ARIA property 'aria-describedby' value is not valid</h3>
+                            <div class="issue-details">
+                            <p>WCAG Criteria affected: WCAG 1.3.1 where information, structure, and relationships conveyed through presentation can also be programmatically determined or are available in text.<br/></p>
+                            <p>Affected Element:The 'id' "nameHelp" specified for the ARIA property 'aria-describedby' value is not valid<br/></p>
+                            <p>User Impact:People using a screen reader, including blind, low vision, neurodivergent ones and people with dexterity impairments using voice control.<br/></p>
+                            <p>Proposed Solution:By updating the ARIA property value with the unique id value of a valid visible element.<br/></p>
+                        </div>
+                        </div>
+                        
+                        <div class="issue-card">
+                            <h3>Issue: Background is less than the WCAG AA minimum requirements</h3>
+                            <div class="issue-details">
+                            <p>WCAG Criteria:WCAG 1.4.3: Contrast Minimum<br/></p>
+                            <p>Affected Element:h3<br/></p>
+                            <p>User Impact:The ones who are unable to see color, having limited color vision, or having color blindness<br/></p>
+                            <p>Proposed Solution:Have large text that is at least 18 point or at least 14 point when bold, adjust the color of the text or its background to give at least a 3 to 1 contrast ratio<br/></p>
+                        </div>
+                        
+                        </div>
+                        <div class="issue-card">
+                            <h3>Issue:'id' "emailHelp" specified for the ARIA property 'aria-describedby' value is not valid</h3>
+                            <div class="issue-details">
+                            <p>WCAG Criteria:1.3.1 that deals with information and relationships (Level A)<br/></p>
+                            <p>Affected Element:Input element with name, element, etc <br/></p>
+                            <p>User Impact: Ones who use a screen reader, are blind or have low vision, and neurodivergent people<br/></p>
+                            <p>Proposed Solution: Updating the ARIA property  with a unique id value of a valid visible element<br/></p>
+                        </div>
+                        </div>
+                    </section>
+                </section>
             </div>
         </main>
         <a href="../index.html">Home</a>

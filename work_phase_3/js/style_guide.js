@@ -1,4 +1,4 @@
-import { initAccordion } from './modules/accordion.js';
+import { initAccordion } from '.js/modules/accordion.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     initAccordion('.accordion');

@@ -6,8 +6,6 @@
         <title>Work Phase 3</title>
         <!-- Linking External JavaScript -->
         <script type="module" src="js/index.js"></script>
-        <script type="module" src="js/site-map.js"></script>
-        <script type="module" src="js/modules/accordion.js"></script>
 
         <!-- Linking external CSS -->
         <link rel="stylesheet" href="css/reset.css" />
@@ -15,7 +13,8 @@
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/component_skeletons/accordion.css" />
-
+        <link rel="stylesheet" href="css/component_skeletons/card.css" />
+        <link rel="stylesheet" href="css/page_css/site_map.css" />
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     </head>
     <body>
@@ -83,7 +82,7 @@
 
                 <section class="accordion m-y-3">
                     <div class="accordion-item">
-                        <button class="accordion-header">▷ Inspiration</button>
+                        <button class="accordion-header">▷ About us</button>
                         <div class="accordion-content">
                             <p class="m-y-3">
                                 Central hub for users to see and share inspiring
@@ -96,7 +95,6 @@
                                 </span>
                             </p>
 
-                            <!-- Nested Accordion for Sub-pages -->
                             <div class="accordion nested">
                                 <div class="accordion-item">
                                     <button class="accordion-header">
@@ -116,5 +114,8 @@
                 </section>
             </div>
         </main>
+        
+        <script type="module" src="js/site-map.js"></script>
+        <script type="module" src="js/modules/accordion.js"></script>
     </body>
 </html>

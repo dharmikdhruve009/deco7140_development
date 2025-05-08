@@ -25,7 +25,8 @@
  * */
 
 // In your js/PAGE_NAME.js file
-import postFormData from '.js/modules/postFormData.js';
+// import postFormData from './modules/postFormData.js';
+import { postFormData } from './modules/postFormData.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('community-form');

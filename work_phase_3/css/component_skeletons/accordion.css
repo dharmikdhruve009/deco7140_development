@@ -31,7 +31,7 @@
 
 .accordion-item.open .accordion-content {
     padding: 1rem;
-    max-height: 1000px; /* Increased for longer content */
+    max-height: 2500px; /* Increased for longer content */
 }
 
 /* Use your existing color variables for nested accordions */

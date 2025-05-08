@@ -1,13 +1,14 @@
 
-/*import { fetchGetData } from '.js/modules/getData.js';
+import { fetchGetData } from './modules/getData.js';
                     
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('community-list');
 
-    fetchGetData('https://yourdomain/api/community/', {
+    fetchGetData('https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/community/', {
         'student_number': 's4854993',
         'uqcloud_zone_id': '33ba08a0'
     }).then(data => {
+        console.log(data); // Log the data to see its structure
         if (!data) {
         container.innerHTML = '<p class="text-danger">Unable to load community members.</p>';
         return;
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(card);
         });
     });
-});*/
+});
 
 import { initAccordion } from './modules/accordion.js';
 

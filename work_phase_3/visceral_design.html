@@ -12,11 +12,12 @@
         <link rel="stylesheet" href="css/page_css/visceral_design.css" />
         <link rel="stylesheet" href="css/component_skeletons/viewer.css" />
 
-        <script type="module" src=".js/index.js"></script>
-        <script type="module" src=".js/modules/accordion.js"></script>
-        <script type="module" src=".js/modules/visceral.js"></script>
-        <script type="module" src=".js/modules/colour_scheme.js"></script>
-        <title>Visceral Design</title>
+        <!-- Fixed the JS module paths by adding proper ./ prefix -->
+        <script type="module" src="./js/index.js"></script>
+        <script type="module" src="./js/modules/accordion.js"></script>
+        <script type="module" src="./js/modules/visceral.js"></script>
+        <script type="module" src="./js/modules/colour_scheme.js"></script>
+        <title>Style Guide</title>
     </head>
     <body>
         <nav id="nav-mobile" aria-label="Main Navigation">
@@ -66,92 +67,19 @@
         <main class="container">
             <nav class="breadcrumbs">
                 <a href="index.html">Home ></a>
-                <a href="style_guide.html"> Style Guide ></a>
-                <a href="visceral_design.html">Visceral Design</a>
+                <a href="style_guide.html"> Style Guide</a>
             </nav>
-            <div class="container">
-                <h1>Visceral Design</h1>
-                <p class="hero-text">
-                    The visceral design of the website is focused on creating a
-                    visually appealing and user-friendly interface. The design
-                    elements are carefully chosen to evoke positive emotions and
-                    enhance the overall user experience.
-                </p>
+
+            <h1>Style Guide</h1>
+            <p class="hero-text">
+                A comprehensive guide to our website's visual elements and
+                components.
+            </p>
 
             <article>
-                <h2 class="m-t-3">Page Layouts</h2>
-
-                <h1 class="gallery m-t-3"></h1>
-                <h2>Wireframe for mobile</h2>
-                <!-- gallery of small images -->
-                <section class="gallery m-t-3">
-                    <img
-                        src="assets/mobile_welcome.png"
-                        alt="Homepage Wireframe Image"
-                    />
-                    <img
-                        src="assets/mobile_aboutus.png"
-                        alt="About Us Wireframe Image"
-                    />
-                    <img
-                        src="assets/mobile_group.png"
-                        alt="Community Engagement Wireframe Image"
-                    />
-                    <img
-                        src="assets/mobile_events.png"
-                        alt="Events happening around Wireframe Image"
-                    />
-                    <img
-                        src="assets/mobile_resources.png"
-                        alt="Resource and its Utilization Wireframe Image"
-                    />
-                    <img
-                        src="assets/mobile_userstories.png"
-                        alt="User Stories and Feedback Image"
-                    />
-                </section>
-
-                <h2>Wireframe for the desktop</h2>
-                <!-- gallery of small images -->
-                <section class="gallery m-t-3">
-                    <img
-                        src="assets/homepage.png"
-                        alt="Homepage Wireframe Image"
-                    />
-                    <img
-                        src="assets/about.png"
-                        alt="About Us Wireframe Image"
-                    />
-                    <img
-                        src="assets/engagement.png"
-                        alt="Community Engagement Wireframe Image"
-                    />
-                    <img
-                        src="assets/events.png"
-                        alt="Events happening around Wireframe Image"
-                    />
-                    <img
-                        src="assets/resources.png"
-                        alt="Resource and its Utilization Wireframe Image"
-                    />
-                    <img
-                        src="assets/community.png"
-                        alt="User Stories and Feedback Image"
-                    />
-                </section>
-
-                <!-- Large Image Viewer -->
-                <aside class="viewer" id="viewer" aria-hidden="true">
-                    <button id="close-viewer" aria-label="Close image viewer">
-                        ✖
-                    </button>
-                    <p id="viewer-caption"></p>
-                </aside>
-
-                <h1>Style Guide</h1>
+                <!-- Color Scheme Section -->
                 <section>
-                    <!-- Color Scheme Section -->
-                    <h3 class="m-t-3">Colour Scheme</h3>
+                    <h2 class="m-t-3">Colour Scheme</h2>
                     <div class="card-container">
                         <div class="simple-card">
                             <h4>Primary Color</h4>
@@ -202,64 +130,75 @@
                                 Pure White (clarity)
                             </button>
                         </div>
-                        
                     </div>
+                </section>
 
-                    <!-- Typography Section -->
-                    <h3>Typography</h3>
+                <!-- Typography Section (Updated with your content) -->
+                <section>
+                    <h2 class="m-t-3">Typography</h2>
                     <div class="card-container">
                         <div class="simple-card">
                             <h1>H1 Heading Example</h1>
-                            <p>
-                                font-family: "Fira Mono","Fira Code",
-                                sans-serif
-                            </p>
-                            <p>Font Size: 4.2rem (67.2px)</p>
+                            <p>Font Family: Urbanist, sans-serif</p>
+                            <p>Font Size: 4rem (64px)</p>
                             <p>Color: var(--color-primary)</p>
                         </div>
                         <div class="simple-card">
                             <h2>H2 Heading Example</h2>
-                            <p>
-                                font-family: "Fira Mono","Fira Code",
-                                sans-serif
-                            </p>
-                            <p>Font Size: 2.6rem (48px)</p>
+                            <p>Font Family: Urbanist, sans-serif</p>
+                            <p>Font Size: 3rem (48px)</p>
                         </div>
                         <div class="simple-card">
                             <h3>H3 Heading Example</h3>
-                            <p>
-                                font-family: "Fira Mono,"Fira Code",
-                                sans-serif
-                            </p>
-                            <p>Font Size: 1.6rem (24px)</p>
+                            <p>Font Family: Urbanist, sans-serif</p>
+                            <p>Font Size: 1.5rem (24px)</p>
+                        </div>
+                        <div class="simple-card">
+                            <h4>H4 Heading Example</h4>
+                            <p>Font Family: Urbanist, sans-serif</p>
+                            <p>Font Size: 1rem (16px)</p>
+                            <p>Font Weight: bold</p>
+                        </div>
+                        <div class="simple-card">
+                            <h5>H5 Heading Example</h5>
+                            <p>Font Family: Urbanist, sans-serif</p>
+                            <p>Font Size: 0.75rem (12px)</p>
+                            <p>Font Weight: bold</p>
                         </div>
                         <div class="simple-card">
                             <p>Paragraph example</p>
-                            <p>
-                                font-family: "Fira Mono","Fira Code",
-                                sans-serif
-                            </p>
+                            <p>Font Family: Urbanist, sans-serif</p>
                             <p>Font Size: 1rem (16px)</p>
                         </div>
                     </div>
+                </section>
 
-                    <h3>Line Spacing</h3>
+                <!-- Line Spacing Section -->
+                <section>
+                    <h2 class="m-t-3">Line Spacing</h2>
                     <div class="card-container">
                         <div class="simple-card">
                             <p>
-                                Line height across the site has been set to
-                                1.6rem. This is to support accessibility.
+                                Line height across the site has been set to 1.5.
+                                This is to support accessibility.
                             </p>
                         </div>
                     </div>
+                </section>
+                <!-- Typography Preview Card -->
+                <section class="card m-t-3">
+                    <h2>Typography Preview</h2>
+                    <p>
+                        This card demonstrates typography styles with a clean,
+                        centered layout.
+                    </p>
                 </section>
             </article>
         </main>
 
         <!-- Linking External JavaScript -->
-        <script type="module" src="js/style_guide.js"></script>
-        <script type="module" src="js/modules/accordion.js"></script>
-        <script type="module" src="js/visceral_design.js"></script>
-        <script type="module" src="js/colour_scheme.js"></script>
+        <script type="module" src="./js/style_guide.js"></script>
+        <script type="module" src="./js/modules/accordion.js"></script>
+        <script type="module" src="./js/typography.js"></script>
     </body>
 </html>

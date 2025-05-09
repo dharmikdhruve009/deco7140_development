@@ -1,0 +1,12 @@
+@import './component_skeletons/gallery.css';
+@import './component_skeletons/viewer.css';
+.simple-card {
+    background-color: rgb(241, 241, 237);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}

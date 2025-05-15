@@ -81,3 +81,105 @@ nav ul {
     max-width: 100%;
     height: auto;
 }
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.simple-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Temperature Widget Styles */ 
+.temperature-widget { 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background: var(--color-dark); 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: rgb(106, 102, 236);  
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .simple-card {
+        width: 30%;
+        max-width: 400px;
+        margin: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .simple-card {
+        width: auto;
+        flex: 1 1 280px;
+    }
+}
+
+/* button styles */
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.button-primary {
+    background-color: var(--color-primary,  #f8f3f3);
+    color: rgb(110, 2, 250);
+}
+
+.button-secondary {
+    background-color: var(--color-secondary, #f8f3f3);
+    color: rgb(2, 84, 1);
+}
+
+.button-dark {
+    background-color: var(--color-dark, #f8f3f3);
+    color: rgb(254, 1, 18);
+}
+
+.button-bright {
+    background-color: var(--color-bright, #f8f3f3);
+    color: black;
+}
+
+/* Hover Effect for Buttons */ 
+.button:hover { 
+    box-shadow: 2px 2px 10px rgba(110, 114, 234, 0.977); /* Adds a subtle shadow */ 
+    transform: translateY(-2px); /* Lifts the button slightly */ 
+    transition: all 0.2s ease-in-out; /* Smooth transition */ 
+} 
+

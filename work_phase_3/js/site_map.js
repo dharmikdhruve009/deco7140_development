@@ -1,33 +1,54 @@
-/**
-* IMPORTS
-* Keep track of external modules being used
-* */
+// /**
+// * IMPORTS
+// * Keep track of external modules being used
+// * */
 
-/**
-* CONSTANTS
-* Define values that don't change e.g. page titles, URLs, etc.
-* */
+// /**
+// * CONSTANTS
+// * Define values that don't change e.g. page titles, URLs, etc.
+// * */
 
+// /**
+// * VARIABLES
+// * Define values that will change e.g. user inputs, counters, etc.
+// * */
 
-/**
-* VARIABLES
-* Define values that will change e.g. user inputs, counters, etc.
-* */
+// /**
+// * FUNCTIONS
+// * Group code into functions to make it reusable
+// * */
 
+// /**
+// * EVENT LISTENERS
+// * The code that runs when a user interacts with the page
+// * */
 
-/**
-* FUNCTIONS
-* Group code into functions to make it reusable
-* */
+// // when the page fully loads
+// import { initAccordion } from './modules/accordion.js';
 
-/**
-* EVENT LISTENERS
-* The code that runs when a user interacts with the page
-* */
+// document.addEventListener('DOMContentLoaded', () => {
+//     initAccordion('.accordion');
+//     initAccordion('.accordion.nested');
+// });
 
-// when the page fully loads
-import { initAccordion } from './modules/accordion.js';
+document.addEventListener("DOMContentLoaded", () => {
+    const headers = document.querySelectorAll(".accordion-header");
 
-document.addEventListener('DOMContentLoaded', () => {
-    initAccordion('.accordion');
+    headers.forEach((header) => {
+        header.addEventListener("click", () => {
+            const content = header.nextElementSibling;
+
+            if (!content) return;
+
+            const isOpen = content.style.maxHeight;
+
+            if (isOpen) {
+                content.style.maxHeight = null;
+                header.classList.remove("open");
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                header.classList.add("open");
+            }
+        });
+    });
 });

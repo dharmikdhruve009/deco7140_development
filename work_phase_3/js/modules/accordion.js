@@ -14,3 +14,4 @@ function initAccordion(containerSelector) {
 }
 
 export { initAccordion };
+

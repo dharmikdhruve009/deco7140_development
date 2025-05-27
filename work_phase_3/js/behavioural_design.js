@@ -28,7 +28,8 @@
 // import postFormData from './modules/postFormData.js';
 import { postFormData } from './modules/postFormData.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+    {
     const form = document.getElementById('community-form');
     const feedback = document.getElementById('form-feedback');
 

@@ -26,9 +26,39 @@
 
 // In your js/PAGE_NAME.js file
 // import postFormData from './modules/postFormData.js';
+
+/**
+* IMPORTS
+* Keep track of external modules being used
+
+* */
+
+/**
+ * CONSTANTS
+ * Define values that don't change e.g. page titles, URLs, etc.
+ * */
+
+/**
+ * VARIABLES
+ * Define values that will change e.g. user inputs, counters, etc.
+ * */
+
+/**
+ * FUNCTIONS
+ * Group code into functions to make it reusable
+ * */
+
+/**
+ * EVENT LISTENERS
+ * The code that runs when a user interacts with the page
+ * */
+
+// In your js/PAGE_NAME.js file
+// import postFormData from './modules/postFormData.js';
 import { postFormData } from './modules/postFormData.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+    {
     const form = document.getElementById('community-form');
     const feedback = document.getElementById('form-feedback');
 

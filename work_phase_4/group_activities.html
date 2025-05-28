@@ -7,63 +7,89 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
-
         <title>Group Activities</title>
     </head>
     <body>
         <div class="container">
-            <h1>Group Activities and Directories</h1>
-        </div>
-        <body>
-        <div class="container">
-            <h1>Events and Much More</h1>
-        </div>
-                <nav id="nav-mobile" aria-label="Main Navigation">
-            <ul>
-                <li>
-                    <a href="home_page.html"><span class="icon">🏠</span></a>
-                </li>
-                <li>
-                    <a href="about_us.html"><span class="icon">🏠</span></a>
-                </li>
+            <main>
+                <h1>Group Activities and Community Directories</h1>
                 
-                <li>
-                    <a href="events.html"><span class="icon">🎨</span></a>
-                </li>
-                <li>
-                    <a href="resources.html"><span class="icon">⚖</span></a>
-                </li>
-                <li>
-                    <a href="community_stories.html"><span class="icon">🧭</span></a>
-                </li>
-                <li>
-                    <a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a>
-                </li>
+                <!-- Details/Summary Alternative -->
+                <details class="details-section">
+                    <summary class="details-header">🏘️ Community Groups & Forums</summary>
+                    <div class="details-content">
+                        <p>Connect with like-minded international students through our diverse community groups and discussion forums.</p>
+                        
+                        <!-- Nested Details -->
+                        <details class="details-nested">
+                            <summary class="details-nested-header">Academic Study Groups</summary>
+                            <div class="details-nested-content">
+                                <p><strong>Engineering Study Circle:</strong> Weekly sessions covering mathematics, physics, and programming fundamentals.<br>
+                                <strong>Business & Economics Forum:</strong> Case study discussions and assignment collaboration.</p>
+                            </div>
+                        </details>
+                        
+                        <details class="details-nested">
+                            <summary class="details-nested-header">Cultural & Regional Groups</summary>
+                            <div class="details-nested-content">
+                                <p><strong>Asian Students Association:</strong> Cultural celebrations, food festivals, and heritage events.<br>
+                                <strong>European Student Network:</strong> Travel groups, exchange programs, and networking events.</p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <details class="details-section">
+                    <summary class="details-header">🤝 Volunteer Opportunities</summary>
+                    <div class="details-content">
+                        <p>Make a meaningful impact while building valuable skills and connections.</p>
+                        
+                        <details class="details-nested">
+                            <summary class="details-nested-header">Campus Volunteer Programs</summary>
+                            <div class="details-nested-content">
+                                <p><strong>Orientation Mentor:</strong> Guide new international students through their first weeks in Australia.</p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <details class="details-section">
+                    <summary class="details-header">📋 Support Services Directory</summary>
+                    <div class="details-content">
+                        <p>Access comprehensive support services designed specifically for international students.</p>
+                        
+                        <details class="details-nested">
+                            <summary class="details-nested-header">Academic Support Services</summary>
+                            <div class="details-nested-content">
+                                <p><strong>Writing Center:</strong> Free essay feedback, assignment planning, and academic writing workshops.</p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+            </main>
+        </div>
+
+        <!-- Navigation (unchanged) -->
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <ul>
+                <li><a href="home_page.html"><span class="icon">🏠</span></a></li>
+                <li><a href="about_us.html"><span class="icon">ℹ️</span></a></li>
+                <li><a href="events.html"><span class="icon">🎨</span></a></li>
+                <li><a href="resources.html"><span class="icon">⚖</span></a></li>
+                <li><a href="community_stories.html"><span class="icon">🧭</span></a></li>
+                <li><a href="genai_mt_acknowledgement.html"><span class="icon">🤖</span></a></li>
             </ul>
         </nav>
 
         <nav id="nav-desktop" aria-label="Main Navigation">
-                        <ul>
-                <li>
-                    <a href="home_page.html">Home</a>
-                </li>
-                <li>
-                    <a href="about_us.html">About Us</a>
-                </li>
-                
-                <li>
-                    <a href="events.html">Group Activities</a>
-                </li>
-                <li>
-                    <a href="resources.html">Resources</a>
-                </li>
-                <li>
-                    <a href="community_stories.html">Events</a>
-                </li>
-                <li>
-                    <a href="genai_mt_acknowledgement.html">GenAI</a>
-                </li>
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community_stories.html">Community Stories</a></li>
+                <li><a href="genai_mt_acknowledgement.html">GenAI</a></li>
             </ul>
+        </nav>
     </body>
-
 </html>

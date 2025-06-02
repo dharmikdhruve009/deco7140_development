@@ -19,7 +19,7 @@ body {
 /* Typography (Using Golden Ratio) */
 h1 {
     font-family: "Fira Mono", monospace; /* Apply Fira Mono to headings as well */
-    font-size: 4.2rem;
+    font-size: 3rem;
     color: var(--primary-color);
 }
 

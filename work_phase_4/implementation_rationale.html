@@ -3,33 +3,72 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        
+
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/component_skeletons/implementation_rationale.css" />
         <title>Implementation Rationale</title>
     </head>
     <body>
-        
         <!-- Your content goes here -->
         <div class="container">
             <h2>Implementation Rationale</h2>
             <ul>
-                <li>1. Buttons have been implemented with the hovering effect using the accent colour upon hovering to keep the interface engaging and interactive. 
-                This approach not only enhances the visual appeal but also provides users with clear minimal design good for visualization and simplicity.</li><br>
-                <li>2. The hovering over the cards was changed to the root colour scheme for consistency and visualization</li><br>
-                <li>3. Submit buttons have been styled to match the accent color scheme instead of primary, ensuring they stand out and are easily identifiable.</li><br>
-                <li>4. For Events page, initially an accordion layout was considered to organize event information effectively, but it was later changed to a grid layout with info-cards as some errors kept on repeating making it hard to trace.</li>
+                <li>
+                    1. Buttons have been implemented with the hovering effect
+                    using the accent colour upon hovering to keep the interface
+                    engaging and interactive. This approach not only enhances
+                    the visual appeal but also provides users with clear minimal
+                    design good for visualization and simplicity.
+                </li>
+                <br />
+                <li>
+                    2. The hovering over the cards was changed to the root
+                    colour scheme for consistency and visualization
+                </li>
+                <br />
+                <li>
+                    3. Submit buttons have been styled to match the accent color
+                    scheme instead of primary, ensuring they stand out and are
+                    easily identifiable.
+                </li>
+                <br />
+                <li>
+                    4. For Events page, initially an accordion layout was
+                    considered to organize event information effectively, but it
+                    was later changed to a grid layout with info-cards as some
+                    errors kept on repeating making it hard to trace.
+                </li>
+                <br /><br />
+                <a href="https://example.com">
+                    <img
+                        src="images/group_events_accessibility.png"
+                        alt="Assessment of Group Events Accessibility"
+                    />
+                </a><br />
+                <p>In the above image the colours for "detailed-header" and "detailed-header-nested were changed to solve the contrast issue"</p><br/><br />
+                <a href="https://example.com">
+                    <img
+                        src="images/resources_implementation_rationale.png"
+                        alt="Assessment of Resources Implementation Rationale"
+                    />
+                </a><br />
+                <p>The Image above shows 0 errors found in the Resources Implementation Rationale upon using IBM assessibility assessment checker</p><br />
 
-            </ul><br>
+            </ul>
+            <br />
             <p>
-                Our approach focuses on accessibility, ensuring that all members can
-                benefit from the features offered. We prioritize responsive design,
-                ensuring compatibility across devices, and implement best practices in
-                web development to guarantee a seamless experience.
-            </p><br><br><br>
-        </div><br>
+                Our approach focuses on accessibility, ensuring that all members
+                can benefit from the features offered. We prioritize responsive
+                design, ensuring compatibility across devices, and implement
+                best practices in web development to guarantee a seamless
+                experience.
+            </p>
+            <br /><br /><br />
+        </div>
+        <br />
         <nav id="nav-mobile" aria-label="Main Navigation">
             <ul>
                 <li>
@@ -42,18 +81,23 @@
                     <a href="events.html"><span class="icon">🧭</span></a>
                 </li>
                 <li>
-                    <a href="group_activities.html"><span class="icon">🎨</span></a>
+                    <a href="group_activities.html"
+                        ><span class="icon">🎨</span></a
+                    >
                 </li>
                 <li>
                     <a href="resources.html"><span class="icon">🗄️</span></a>
                 </li>
                 <li>
-                    <a href="other_pages.html"><span class="icon">📄📄</span></a>
+                    <a href="other_pages.html"
+                        ><span class="icon">📄📄</span></a
+                    >
+                </li>
             </ul>
         </nav>
 
         <nav id="nav-desktop" aria-label="Main Navigation">
-                        <ul>
+            <ul>
                 <li>
                     <a href="home_page.html">Home</a>
                 </li>
@@ -74,6 +118,5 @@
                 </li>
             </ul>
         </nav>
-
     </body>
 </html>

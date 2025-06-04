@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/base.css" />
-        <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/components.css" />
-        <script type="module" src="js/about_us.js"></script>
-        <link rel="stylesheet" href="css/page.css/behavioural_design.css" />
-        <link rel="stylesheet" href="css/component_skeletons/form_style.css" />
-        
-
-        <title>About Us</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/component_skeletons/about_us.css" />
+    <link rel="stylesheet" href="css/page.css/behavioural_design.css" />
+    <link rel="stylesheet" href="css/component_skeletons/form_style.css" />
+    <script type="module" src="js/about_us.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <nav id="nav-mobile" aria-label="Main Navigation">
+        <ul>
+            <li><a href="home_page.html"><span class="icon">🏠</span></a></li>
+            <li><a href="events.html"><span class="icon">🗓️</span></a></li>
+            <li><a href="group_activities.html"><span class="icon">🎨</span></a></li>
+            <li><a href="resources.html"><span class="icon">⚖</span></a></li>
+            <li><a href="community_stories.html"><span class="icon">🏠</span></a></li>
+            <li><a href="other_pages.html"><span class="icon">📄📄</span></a></li>
+        </ul>
+    </nav>
+    <nav id="nav-desktop" aria-label="Main Navigation">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="group_activities.html">Group Activities</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="community_stories.html">Community Stories</a></li>
+            <li><a href="other_pages.html">Other Pages</a></li>
+        </ul>
+    </nav>
+    <main>
         <div class="container">
             <h1>Get to Know About Our Mission and Vision</h1>
-
             <div class="value-boxes-container">
                 <div class="value-box">
                     <div class="flip-card-container">
@@ -127,7 +146,6 @@
                 provide opportunities for students to share their heritage while
                 learning about others.
             </p>
-
             <h2>Academic Support Programs</h2>
             <p>
                 Understanding that academic success is crucial, we offer study
@@ -231,7 +249,6 @@
                 receive official recognition and references for your
                 contributions.
             </p>
-
             <h2>Campus Representatives</h2>
             <p><strong>Become the Bridge at Your University:</strong></p>
             <ul>
@@ -269,9 +286,7 @@
 
             <h2>Event Participation</h2>
             <p>
-                <strong
-                    >Simply Join Us and Be Part of Something Amazing:</strong
-                >
+                <strong>Simply Join Us and Be Part of Something Amazing:</strong>
             </p>
             <ul>
                 <li>
@@ -305,121 +320,61 @@
                 virtual participation options for those who cannot attend in
                 person.
             </p>
-<section class="form-section">
-    <h2 class="form-heading">Just some details and clicks away mate!!!</h2>
-    <h3>Submit Your Details to Join the Community and Subscribe to our newsletter</h3>
-
-    <div class="form-card">
-        <form id="community-form" novalidate>
-            <div class="form-group">
-                <label for="name" class="form-label">
-                    Full Name <span class="required" aria-hidden="true">*</span>
-                </label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-input"
-                    required
-                    minlength="2"
-                    maxlength="50"
-                    aria-describedby="nameHelp"
-                />
-            </div>
-
-            <div class="form-group">
-                <label for="email" class="form-label">
-                    Email Address <span class="required" aria-hidden="true">*</span>
-                </label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-input"
-                    required
-                    aria-describedby="emailHelp"
-                />
-            </div>
-
-            <div class="form-group">
-                <label for="photo" class="form-label">Upload Photo</label>
-                <div class="file-upload">
-                    <input
-                        type="file"
-                        id="photo"
-                        name="photo"
-                        class="form-input-file"
-                        aria-describedby="photo-help"
-                    />
-                    <span class="file-custom"></span>
+            <section class="form-section">
+                <h2 class="form-heading">Just some details and clicks away mate!!!</h2>
+                <h3>Submit Your Details to Join the Community and Subscribe to our newsletter</h3>
+                <div class="form-card">
+                    <form id="community-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                Full Name <span class="required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-input"
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                aria-describedby="nameHelp"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email Address <span class="required" aria-hidden="true">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input"
+                                required
+                                aria-describedby="emailHelp"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="photo" class="form-label">Upload Photo</label>
+                            <div class="file-upload">
+                                <input
+                                    type="file"
+                                    id="photo"
+                                    name="photo"
+                                    class="form-input-file"
+                                    aria-describedby="photo-help"
+                                />
+                                <span class="file-custom"></span>
+                            </div>
+                            <div id="photo-help" class="form-text">
+                                Upload a clear photo (JPG/PNG, max 5MB)
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Join Now</button>
+                        <p id="form-feedback" aria-live="polite"></p>
+                    </form>
                 </div>
-                <div id="photo-help" class="form-text">
-                    Upload a clear photo (JPG/PNG, max 5MB)
-                </div>
-            </div>
-
-            <button type="submit" class="submit-btn">Join Now</button>
-            <p id="form-feedback" aria-live="polite"></p>
-        </form>
-    </div>
-    </section>
-    </div>
-
-        <div class="container">
-            <nav id="nav-mobile" aria-label="Main Navigation">
-                <ul>
-                    <li>
-                        <a href="home_page.html"
-                            ><span class="icon">🏠</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="events.html"><span class="icon">🗓️</span></a>
-                    </li>
-                    <li>
-                        <a href="group_activities.html"
-                            ><span class="icon">🎨</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="resources.html"><span class="icon">⚖</span></a>
-                    </li>
-                    <li>
-                        <a href="community_stories.html"
-                            ><span class="icon">🏠</span></a
-                        >
-                    </li>
-                    <li>
-                        <a href="other_pages.html"
-                            ><span class="icon">📄📄</span></a
-                        >
-                    </li>
-                </ul>
-            </nav>
-
-            <nav id="nav-desktop" aria-label="Main Navigation">
-                <ul>
-                    <li>
-                        <a href="home_page.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="group_activities.html">Group Activities</a>
-                    </li>
-                    <li>
-                        <a href="resources.html">Resources</a>
-                    </li>
-                    <li>
-                        <a href="community_stories.html">Community Stories</a>
-                    </li>
-                    <li>
-                        <a href="other_pages.html">Other Pages</a>
-                    </li>
-                </ul>
-            </nav>
+            </section>
         </div>
-    </body>
+    </main>
+</body>
 </html>

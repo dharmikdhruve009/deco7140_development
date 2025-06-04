@@ -30,11 +30,12 @@ h2 {
 }
 
 h3 {
-    font-family: "Fira Mono", monospace; /* Apply Fira Mono to headings as well */
+    font-family: "Fira Mono", monospace;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: #00796b; /* Dark teal, contrast ratio ~6.5:1 */
 }
+
 
 p {
     font-size: 1rem;

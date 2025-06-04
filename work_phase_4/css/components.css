@@ -1,4 +1,4 @@
-/* === Flip Card Styles === */
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -450,9 +450,8 @@ nav ul {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.92);
 }
 
-/* === Form Elements === */
 .submit-btn {
-    background: #2d085c; /* deep purple, or any dark color */
+    background: var(--primary-purple); /* deep purple, or any dark color */
     color: #fff;
     padding: 12px 24px;
     border-radius: 5px;
@@ -462,6 +461,10 @@ nav ul {
     transition: background-color 0.3s ease;
     width: auto;
     display: inline-block;
+}
+
+a {
+    color: #1a0dab; /* Google blue, contrast ratio > 8:1 */
 }
 
 .submit-btn:hover {

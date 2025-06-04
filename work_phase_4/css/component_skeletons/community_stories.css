@@ -46,7 +46,7 @@
 
 .story-meta {
     display: block;
-    color: var(--secondary-color, #00bfae);
+    color: #00796b;
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
     font-style: italic;

@@ -312,6 +312,7 @@
     border-left: 3px solid var(--primary-color);
 }
 
+
 /* === Accessibility Enhancements === */
 .nav-card:focus-within {
     outline: 2px solid var(--accent-color);
@@ -463,9 +464,6 @@ nav ul {
     display: inline-block;
 }
 
-a {
-    color: #1a0dab; /* Google blue, contrast ratio > 8:1 */
-}
 
 .submit-btn:hover {
     background-color: var(--accent-color);

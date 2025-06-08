@@ -9,13 +9,15 @@
         <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/components.css" />
         <link rel="stylesheet" href="css/component_skeletons/implementation_rationale.css" />
+        
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
         <title>Implementation Rationale</title>
     </head>
     <body>
         <!-- Your content goes here -->
         <div class="container">
-            
-                    <a href="https://github.com/dharmikdhruve009/deco7140_development">Click here to go to the GitHub Repository</a></li><br>
+            <br><br>
+            <a href="https://github.com/dharmikdhruve009/deco7140_development">Click here to go to the GitHub Repository</a></li><br>
             <h2>Implementation Rationale</h2>
             <ul>
                 
@@ -47,6 +49,12 @@
                 <br>
                 <li>
                     5. In the About us, the "h3" tag had to be changed with a bit of darker shade as accessibility demanded a higher contrast ratio.
+                </li><br>
+                <li>
+                    6. Use of Icons that were used previously in workphase 3 remained same except for resources and community stories.<br>
+                    For Resources, the icon was changed to a file cabinet to represent the storage of valuable information.<br>
+                    For Community Stories, the icon was changed to a compass to symbolize exploration and discovery of diverse experiences.<br>
+                    These icons were chosen to visually represent the content of each section, enhancing user understanding and navigation.
                 </li>
                 <br /><br />
                 <a>
@@ -55,21 +63,37 @@
                         alt="Assessment of Home Page Accessibility"
                     />
                 </a><br />
-                <p>If --secondary-color is a light color (like #00bfae) and --background-color is white (#fff), the contrast ratio between the link text and its background will be 2.32:1—well below the WCAG AA minimum of 4.5:1 for normal text and 3:1 for large/bold text.<br>Thus,changes with respect nav links colour were made and changed a dark blue shade to resolve the issue given by IBM accessibility checker</p><br>
+                <p>If --secondary-color is a light color (like #00bfae) and --background-color is white (#fff), the contrast ratio between the link text and its background will be 2.32:1—well below the WCAG AA minimum of 4.5:1 for normal text and 3:1 for large/bold text.<br>Thus,changes with respect nav links colour were made and changed a dark blue shade to resolve the issue given by IBM accessibility checker</p>
+                <p>Users with Low Vision or Color Blindness may struggle to read text with insufficient contrast.</p><br>
                 <a>
                     <img
                         src="images/about_us_assessibility.png"
                         alt="Assessment of About Us Accessibility"
                     />
                 </a><br />
-                <p>In the image above the contrast ratio was changed to be well above the minimum 3:1 for large/bold text and 4.5:1 for normal text.<br> This button will be now readable for users with low vision or color blindness as the submit.btn background color was adjusted.</p><br/><br />
+                <p>In the image above the contrast ratio was changed to be well above the minimum 3:1 for large/bold text and 4.5:1 for normal text.<br> This button will be now readable for users with low vision or color blindness as the submit.btn background color was adjusted.</p>
+                <p>Older Adults, Users in Challenging Environment may also face difficulties with low contrast text.</p><br/><br />
+                <a>
+                    <img
+                        src="images/events_accessibility.png"
+                        alt="Assessment of Events Accessibility"
+                    />
+                </a><br>
+                <p>Added tabindex="0" to the scrollable to make it keyboard accessible. This ensures all users, regardless of input method, can focus on and scroll through important content, meeting accessibility best practices and compliance requirements</p>
+                <p>People who cannot use a mouse and rely on the keyboard for navigation, screen reader users, including those who are blind, have low vision, or are neurodivergent get affected due to not tabbable features. Above rectifications were made to improve accessibility.</p><br>
                 <a>
                     <img
                         src="images/group_events_accessibility.png"
                         alt="Assessment of Group Events Accessibility"
                     />
                 </a><br />
-                <p>In the above image the colours for "detailed-header" and "detailed-header-nested were changed to solve the contrast issue"</p><br/><br />
+                <p>In the above image the colours for "detailed-header" and "detailed-header-nested were changed to solve the contrast issue.</p>
+                <p>WCAG 2.1 AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large/bold text.</p>
+                <p>Users with Low Vision or Color Blindness may struggle to read text with insufficient contrast.</p>
+                <p>Older Adults, Users in Challenging Environment may also face difficulties with low contrast text.</p><br/><br />
+Normal text: Contrast ratio of at least 4.5:1 between text and its background.
+
+Large/bold text: Contrast ratio of at least 3:1.</p><br/><br />
                 <a>
                     <img
                         src="images/resources_implementation_rationale.png"
@@ -83,13 +107,18 @@
                         alt="Assessment of Community Stores Accessibility"
                     />
                 </a><br />
-                <p>Here, the replacement of the success story meta component color with a much darker teal was done to fulfil the better contrast requirement and resolve the issue.</p><br/><br />
-                </ul>
-            <br />
+                <p>Here, the replacement of the success story meta component color with a much darker teal was done to fulfil the better contrast requirement and resolve the issue.</p>
+                <p>Users with Low Vision or Color Blindness may struggle to read text with insufficient contrast.</p>
+                
+                <p>To address these issues, we implemented the following changes:</p>
+                    <li>Improved color contrast for better readability</li>
+                    <li>Ensured compliance with WCAG 2.1 AA standards</li>
+                </ul><br>
+
             <p>
-                Our approach focuses on accessibility, ensuring that all members
-                can benefit from the features offered. We prioritize responsive
-                design, ensuring compatibility across devices, and implement
+                These approaches focus on accessibility, ensuring that all members
+                can benefit from the features offered. Prioritizing responsive
+                design, ensuring compatibility across devices, and implementing
                 best practices in web development to guarantee a seamless
                 experience.
             </p>
@@ -114,6 +143,7 @@
             <ul>
                 <li><a href="home_page.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="group_activities.html">Group Activities</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="community_stories.html">Community Stories</a></li>
